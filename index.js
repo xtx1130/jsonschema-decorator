@@ -13,14 +13,10 @@ global.v = new  Validator();
 
 privateDec = {};
 for(let i = 0; i<scanner.length;i++){
-	try {
-		let valiInstance = require(scanner[i]);
-		privateDec[subStr(valiInstance.id)] = valiInstance;
-	} catch (e) {
-		throw new Error(e);
-	}
+	let valiInstance = require(scanner[i]);
+	privateDec[subStr(valiInstance.id)] = valiInstance;
 }
-function uriJsonSchema () {
+let uriJsonSchema = () => {
 	let keys = Object.keys(privateDec);
 	for(let i = 0; i< keys.length;i++){
 		module.exports[keys[i]] = function (target) {
