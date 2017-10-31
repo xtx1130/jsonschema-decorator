@@ -11,8 +11,8 @@ npm install jsonschema-decorator
 ```
 You need to establish a folder in your project root dir:
 ```shell
-$/projectRootDir mkdir mock-decorator
-chmod -R 777 mock-decorator 
+$/projectRootDir mkdir mock-decorators
+chmod -R 777 mock-decorators
 ```
 Then, you can create js schema roles in dirctory mock-decorator,eg:
 ```code
