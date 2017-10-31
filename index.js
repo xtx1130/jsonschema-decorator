@@ -8,7 +8,7 @@ const scanner = require('./utils/scanner');
 const subStr = require('./utils/takeOffSymbol');
 const path = require('path');
 
-let privateDec = Symbol.for('decorators');
+let privateDec = Symbol.for('symbol#decorators');
 global.v = new  Validator();
 
 privateDec = {};
