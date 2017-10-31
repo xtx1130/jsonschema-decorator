@@ -8,7 +8,7 @@ const path = require('path');
 let filePath = process.env.NODE_ENV == 'travis' ? '/test/mock-decorators/' : '/mock-decorators/';
 let projectPath = process.env.NODE_ENV == 'travis' ? __dirname : process.cwd();
 let privateDec = Symbol.for('symbol#decorators');
-global.v = new  Validator();
+global.v = new Validator();
 
 privateDec = {};
 for(let i = 0; i<scanner.length;i++){
