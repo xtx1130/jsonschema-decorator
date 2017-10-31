@@ -1,7 +1,8 @@
 ### jsonSchema-decorator
 
 > a decorator for jsonSchema
-> 
+
+[![Build Status](https://travis-ci.org/xtx1130/jsonschema-decorator.svg?branch=master)](https://travis-ci.org/xtx1130/jsonschema-decorator) 
 #### Usage
 
 Install code:
