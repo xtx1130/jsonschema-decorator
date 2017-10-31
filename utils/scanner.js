@@ -6,6 +6,8 @@
 const fs = require('fs');
 const path = require('path');
 
+let filePath = process.env.NODE_ENV == 'travis' ? '/test/mock-decorators/' : '/mock-decorators/';
+let projectPath = process.env.NODE_ENV == 'travis' ? path.join(__dirname,'../') : process.cwd();
 let truePath = path.join(projectPath + filePath);
 let str = [];
 let _memoryPath = '';

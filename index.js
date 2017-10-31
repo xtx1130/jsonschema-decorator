@@ -1,13 +1,12 @@
 'use strict';
 
-global.filePath = process.env.NODE_ENV == 'travis' ? '/test/mock-decorators/' : '/mock-decorators/';
-global.projectPath = __dirname;
-
 const Validator = require('jsonschema').Validator;
 const scanner = require('./utils/scanner');
 const subStr = require('./utils/takeOffSymbol');
 const path = require('path');
 
+let filePath = process.env.NODE_ENV == 'travis' ? '/test/mock-decorators/' : '/mock-decorators/';
+let projectPath = process.env.NODE_ENV == 'travis' ? __dirname : process.cwd();
 let privateDec = Symbol.for('symbol#decorators');
 global.v = new  Validator();
 
