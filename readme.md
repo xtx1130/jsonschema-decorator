@@ -2,7 +2,7 @@
 
 > a decorator for jsonSchema
 
-[![Build Status](https://travis-ci.org/xtx1130/jsonschema-decorator.svg?branch=master)](https://travis-ci.org/xtx1130/jsonschema-decorator) 
+[![Build Status](https://travis-ci.org/xtx1130/jsonschema-decorator.svg?branch=master)](https://travis-ci.org/xtx1130/jsonschema-decorator) [![Coverage Status](https://coveralls.io/repos/github/xtx1130/jsonschema-decorator/badge.svg?branch=master)](https://coveralls.io/github/xtx1130/jsonschema-decorator?branch=master)
 #### Usage
 
 Install code:
