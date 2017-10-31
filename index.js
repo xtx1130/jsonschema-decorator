@@ -5,7 +5,9 @@ const scanner = require('./utils/scanner');
 const subStr = require('./utils/takeOffSymbol');
 const path = require('path');
 
+/* istanbul ignore next */
 let filePath = process.env.NODE_ENV == 'travis' ? '/test/mock-decorators/' : '/mock-decorators/';
+/* istanbul ignore next */
 let projectPath = process.env.NODE_ENV == 'travis' ? __dirname : process.cwd();
 let privateDec = Symbol.for('symbol#decorators');
 global.v = new Validator();

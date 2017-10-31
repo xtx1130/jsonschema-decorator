@@ -67,7 +67,7 @@ describe('Request test for jsonSchema decorator', () =>{
 			uri:'http://localhost:7077/jsonDirTest'
 		});
 		dataFailureTest = JSON.parse(dataFailureTest);
-		expect(dataFailureTest.schemaId).toEqual('/jsondirtest');
+		expect(dataFailureTest.schemaId).toEqual('jsondirtest');
 
 		server.close(error => {
 			test('Could not stop server',() => {

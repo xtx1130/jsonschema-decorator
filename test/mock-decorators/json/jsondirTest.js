@@ -3,7 +3,7 @@
 require('../common/person');
 
 exports = module.exports = {
-	"id": "/jsondirtest",
+	"id": "jsondirtest",
 	"type": "object",
 	"properties": {
 		"dir": {
