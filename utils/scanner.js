@@ -6,11 +6,9 @@
 const fs = require('fs')
 const path = require('path')
 
-/* istanbul ignore next */
-let filePath = process.env.NODE_ENV === 'travis' ? '/test/mock-decorators/' : '/mock-decorators/'
-/* istanbul ignore next */
-let projectPath = process.env.NODE_ENV === 'travis' ? path.join(__dirname, '../') : process.cwd()
-let truePath = path.join(projectPath + filePath)
+let filePath = '/mock-decorators/'
+let projectPath = process.cwd()
+let truePath = path.join(projectPath, filePath)
 let str = []
 let _memoryPath = ''
 

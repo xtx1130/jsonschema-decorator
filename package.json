@@ -4,7 +4,7 @@
   "description": "jsonschema decorator",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cross-env NODE_ENV=travis jest --forceExit",
+    "test": "cd test && jest --forceExit",
     "lint": "standard **/*.js *.js --fix",
     "example": "./node_modules/.bin/cross-env NODE_ENV=travis ./node_modules/.bin/babel-node ./test/server.js",
     "cov": "./node_modules/.bin/cross-env NODE_ENV=travis npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
@@ -60,7 +60,13 @@
     ]
   },
   "standard": {
-    "globals": [ "v", "describe", "it", "expect", "test" ],
+    "globals": [
+      "v",
+      "describe",
+      "it",
+      "expect",
+      "test"
+    ],
     "parser": "babel-eslint",
     "ignore": [
       "./converage/*",
