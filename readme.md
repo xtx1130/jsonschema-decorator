@@ -14,6 +14,16 @@ You need to establish a folder in your project root dir:
 $/projectRootDir mkdir mock-decorators
 chmod -R 777 mock-decorators
 ```
+or you can use `package.json` to config a folder that jsonSchema will read:
+```json
+// package.json
+{
+    "jsonSchema": {
+        "path": "The schema path you want"
+    }
+}
+```
+
 Then, you can create js schema roles in dirctory mock-decorator,eg:
 ```code
 mock-decorator/----common/(write common rules in here)
