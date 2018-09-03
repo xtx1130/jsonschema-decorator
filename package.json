@@ -6,8 +6,8 @@
   "scripts": {
     "test": "cd test && jest --forceExit",
     "lint": "standard **/*.js *.js --fix",
-    "example": "./node_modules/.bin/cross-env NODE_ENV=travis ./node_modules/.bin/babel-node ./test/server.js",
-    "cov": "./node_modules/.bin/cross-env NODE_ENV=travis npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "example": "./node_modules/.bin/babel-node ./test/server.js",
+    "cov": "npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,6 @@
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
     "coveralls": "^3.0.0",
-    "cross-env": "^5.1.1",
     "istanbul": "^0.4.5",
     "jest": "^21.2.1",
     "jsonp-body": "^1.0.0"
