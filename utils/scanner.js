@@ -6,9 +6,15 @@
 const fs = require('fs')
 const path = require('path')
 
-let filePath = '/mock-decorators/'
-let projectPath = process.cwd()
-let truePath = path.join(projectPath, filePath)
+let pkg
+let filePath
+try {
+  pkg = require(path.join(process.cwd(), 'package.json'))
+  filePath = pkg.jsonSchema ? pkg.jsonSchema.path : '/mock-decorators/'
+} catch (e) {
+  filePath = '/mock-decorators/'
+}
+let truePath = path.join(process.cwd(), filePath)
 let str = []
 let _memoryPath = ''
 
