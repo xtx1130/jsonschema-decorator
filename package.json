@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cd test && jest --forceExit",
-    "lint": "standard **/utils/* **/test/** *.js --fix",
+    "lint": "standard **/utils/** **/test/** *.js --fix",
     "example": "./node_modules/.bin/babel-node ./test/server.js",
     "cov": "npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
@@ -42,7 +42,7 @@
   },
   "jest": {
     "testMatch": [
-      "**/test/server.js"
+      "**/test/test.js"
     ],
     "coverageDirectory": "./coverage",
     "collectCoverage": true,
@@ -68,7 +68,7 @@
     ],
     "parser": "babel-eslint",
     "ignore": [
-      "./converage/*",
+      "**/coverage/**",
       "LICENSE",
       "note",
       "readme.md",
