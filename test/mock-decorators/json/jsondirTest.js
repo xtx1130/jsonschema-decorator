@@ -1,21 +1,21 @@
-'use strict';
+'use strict'
 
-require('../common/person');
+require('../common/person')
 
 exports = module.exports = {
-	"id": "jsondirtest",
-	"type": "object",
-	"properties": {
-		"dir": {
-			"type": "boolean",
-			"required": "true"
-		},
-		"dirname": {
-			"type": "string",
-			"required": "true"
-		},
-		"params": {
-			"$ref": "/jsonTestParam"
-		}
-	}
+  'id': 'jsondirtest',
+  'type': 'object',
+  'properties': {
+    'dir': {
+      'type': 'boolean',
+      'required': 'true'
+    },
+    'dirname': {
+      'type': 'string',
+      'required': 'true'
+    },
+    'params': {
+      '$ref': '/jsonTestParam'
+    }
+  }
 }
